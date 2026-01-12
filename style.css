@@ -1,0 +1,113 @@
+:root {
+    --maroon: #800000;
+    --white: #ffffff;
+    --cream: #f4e4bc;
+}
+
+body {
+    background-color: var(--maroon);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+section {
+    display: none;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.active { display: block; }
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--white);
+    color: var(--maroon);
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover { transform: scale(1.1); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* List Style */
+#list-container {
+    height: 300px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid var(--white);
+}
+
+.list-item {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px dotted rgba(255,255,255,0.3);
+}
+
+/* Moving Button Page */
+.button-wrap {
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#noBtn {
+    position: absolute;
+    left: 60%;
+}
+
+/* Letter Style */
+.vintage-letter {
+    background: var(--cream);
+    color: #333;
+    padding: 30px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    font-family: 'Playfair Display', serif;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.letter-content h3 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--maroon);
+    font-size: 1.8rem;
+}
+
+.letter-content p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
